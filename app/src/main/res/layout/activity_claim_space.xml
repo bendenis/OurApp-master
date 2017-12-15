@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bendenisshaffer.ourapp.ClaimSpace">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="503dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewCS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Claim Space Page"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewCS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCS1"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/radioButtonCS3"
+            android:layout_toRightOf="@+id/radioButtonCS3"
+            android:text="Your avalable points: "
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCS1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewCS2"
+            android:layout_marginTop="36dp"
+            android:checked="true"
+            android:text="Living Room"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButtonCS1"
+            android:layout_marginTop="44dp"
+            android:text="Kitchin"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButtonCS2"
+            android:layout_marginTop="39dp"
+            android:text="Bath Room"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonCS1"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/buttonCS2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonCS1"
+            android:layout_alignBottom="@+id/buttonCS1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textViewCS3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButtonCS1"
+            android:layout_alignBottom="@+id/radioButtonCS1"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/radioButtonCS1"
+            android:layout_toRightOf="@+id/radioButtonCS1"
+            android:text=": 50 pts"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCS4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioButtonCS2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/radioButtonCS2"
+            android:layout_toRightOf="@+id/radioButtonCS2"
+            android:text=": 25 pts"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCS5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioButtonCS3"
+            android:layout_toLeftOf="@+id/buttonCS2"
+            android:layout_toStartOf="@+id/buttonCS2"
+            android:text=": 10 pts"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewCS6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewCS2"
+            android:layout_alignBottom="@+id/textViewCS2"
+            android:layout_alignEnd="@+id/buttonCS2"
+            android:layout_alignRight="@+id/buttonCS2"
+            android:text="155"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextCS1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonCS3"
+            android:layout_marginTop="41dp"
+            android:layout_toLeftOf="@+id/textViewCS4"
+            android:layout_toStartOf="@+id/textViewCS4"
+            android:ems="10"
+            android:inputType="date"
+            android:text="12/02/2017" />
+
+        <EditText
+            android:id="@+id/editTextCS2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextCS1"
+            android:layout_alignBottom="@+id/editTextCS1"
+            android:layout_toEndOf="@+id/buttonCS1"
+            android:layout_toRightOf="@+id/buttonCS1"
+            android:ems="10"
+            android:inputType="time"
+            android:text="8:00 PM" />
+
+        <TextView
+            android:id="@+id/textViewCS7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextCS2"
+            android:layout_alignBottom="@+id/editTextCS2"
+            android:layout_toEndOf="@+id/textViewCS3"
+            android:layout_toRightOf="@+id/textViewCS3"
+            android:text="-"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextCS3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewCS7"
+            android:layout_alignBottom="@+id/textViewCS7"
+            android:layout_alignEnd="@+id/buttonCS2"
+            android:layout_alignRight="@+id/buttonCS2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="11:00 PM" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

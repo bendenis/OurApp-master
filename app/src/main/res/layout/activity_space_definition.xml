@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bendenisshaffer.ourapp.SpaceDefinitionActivity">
+
+
+
+    <ImageView
+        android:id="@+id/landing_image"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/living_room"
+
+        />
+
+    <EditText
+        android:layout_below="@id/landing_image"
+        android:id="@+id/space_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Space Name"
+        />
+
+    <Button
+        android:layout_below="@id/space_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/roommate_add"
+        android:text="Add Roommate"
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selected_contacts"
+        android:layout_below="@id/roommate_add"
+
+
+        />
+
+
+
+    <ListView
+        android:id="@+id/inventory_list"
+        android:layout_below="@id/selected_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></ListView>
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="Done"
+        android:layout_height="50dp" />
+
+
+
+
+</RelativeLayout>
+

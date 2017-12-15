@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bendenisshaffer.ourapp.ReportChores">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Report Chores"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonchoresubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBoxvacuum"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/checkBoxvacuum"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/buttonchorepageback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonchoresubmit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:text="Back" />
+
+    <CheckBox
+        android:id="@+id/checkBoxtakeouttrash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonchorepageback"
+        android:layout_alignStart="@+id/buttonchorepageback"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="19dp"
+        android:text="Taking out Trash"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxcleanthebathroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxtakeouttrash"
+        android:layout_alignStart="@+id/checkBoxtakeouttrash"
+        android:layout_below="@+id/checkBoxtakeouttrash"
+        android:layout_marginTop="18dp"
+        android:text="Clean the Bathroom"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxvacuum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxcleanthebathroom"
+        android:layout_alignStart="@+id/checkBoxcleanthebathroom"
+        android:layout_below="@+id/checkBoxcleanthebathroom"
+        android:layout_marginTop="16dp"
+        android:text="Vacuum the Living Room"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxwashdishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxvacuum"
+        android:layout_alignStart="@+id/checkBoxvacuum"
+        android:layout_below="@+id/checkBoxvacuum"
+        android:layout_marginTop="18dp"
+        android:text="Wash Dishes"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxshopsupply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxwashdishes"
+        android:layout_alignStart="@+id/checkBoxwashdishes"
+        android:layout_below="@+id/checkBoxwashdishes"
+        android:layout_marginTop="21dp"
+        android:text="Shop Public Supplies"
+        android:textSize="24sp" />
+
+</RelativeLayout>

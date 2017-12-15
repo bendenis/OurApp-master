@@ -1,0 +1,75 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bendenisshaffer.ourapp.MainLaindingPage">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/space_title"
+                android:textSize="50dp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/space_title"
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                />
+
+
+
+            <Button
+                android:id="@+id/report_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test"
+                android:text="Report Chore"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+            <Button
+                android:id="@+id/claim_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/report_button"
+                android:text="Claim Space"
+                android:layout_centerHorizontal="true"
+
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+    <!-- The drawer is given a fixed width in dp and extends the full height of
+         the container. -->
+
+
+</android.support.v4.widget.DrawerLayout>
